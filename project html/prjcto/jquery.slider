@@ -1,0 +1,71 @@
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<script>
+(function($) {
+    $.fn.slajder = function() {
+        return this.each(function() {
+
+    slider = $(this);
+    slider.prepend('<nav class=\"dots"><span></span><span></span></nav>');
+
+    slides = slider.children(".slides");
+    dots = slider.children(".dots");
+    dot = dots.children("span");
+    dot1 = dots.children("span:first-child");
+    dot2 = dots.children("span:nth-child(2)");
+
+    dot1.click(function(){
+        slides.animate({
+            top: '10px',
+        }, 600, function() {
+        // Animation complete.
+
+        });
+        dot.css("-webkit-box-shadow","#444 0 1px 1px 0px");
+        $(this).css("-webkit-box-shadow","#444 0 -1px 1px 0px");
+    });
+    dot2.click(function(){
+        slides.animate({
+            top: '-130px',
+        }, 600, function() {
+        // Animation complete.
+
+        });
+        dot.css("-webkit-box-shadow","#444 0 1px 1px 0px");
+        $(this).css("-webkit-box-shadow","#444 0 -1px 1px 0px");
+    });
+
+
+        });
+    };
+}(jQuery));
+</script>
+
+// this one goes at bottom of a page in script tags
+$(document).ready(function() {
+ $('#slider').slajder();
+});
+</script>
+<div class="slider"  id="slider">
+    <div class="slides">
+   <img src="D:\project html\prjcto\ups\banner-1.jpg" style="width:100%">
+  <img src="D:\project html\prjcto\ups\banner-3.jpg" style="width:100%">
+  <img src="D:\project html\prjcto\ups\banner-4.jpg" style="width:100%">
+  <img src="D:\project html\prjcto\ups\banner-7.jpg" style="width:100%">
+  <img  src="D:\project html\prjcto\ups\banner-8.jpg" style="width:100%">
+    </div>
+</div>
+
+<div class="slider"  id="slider2">
+    <div class="slides">
+	
+    <img src="D:\project html\prjcto\dsp\health2.jpg" style="width:100%">
+  <img  src="D:\project html\prjcto\dsp\health3.jpg" style="width:100%">
+  <img src="D:\project html\prjcto\dsp\health4.jpg" style="width:100%">
+  <img src="D:\project html\prjcto\dsp\health5.jpg" style="width:100%">
+    </div>
+</div>

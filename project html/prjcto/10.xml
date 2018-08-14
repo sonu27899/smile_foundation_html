@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="link.xsl?>
+<studentinfo>
+<student>
+<no>1</no>
+<name>xyz</name>
+<sem>2</sem>
+</student>
+<student>
+<no>2</no>
+<name>abc</name>
+<sem>2</sem>
+</student>
+<student>
+<no>3</no>
+<name>pqr</name>
+<sem>2</sem>
+</student>
+<student>
+<no>4</no>
+<name>dfg</name>
+<sem>2</sem>
+</student>
+<student>
+<no>4</no>
+<name>cyb</name>
+<sem>2</sem>
+</student>
+</studentinfo>
